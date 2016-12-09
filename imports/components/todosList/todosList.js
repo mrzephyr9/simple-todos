@@ -25,7 +25,7 @@ addTask(newTask) {
   // Insert a task into the collection
   Tasks.insert({
     text: newTask,
-    createAt: new Date
+    createdAt: new Date
   });
 
   // Clear form
