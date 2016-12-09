@@ -13,7 +13,7 @@ class TodosListCtrl {
         // Show newest tasks at the top
         return Tasks.find({}, {
           sort: {
-            createAt: -1
+            createdAt: -1
           }
         });
       }
