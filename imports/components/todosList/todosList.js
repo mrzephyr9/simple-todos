@@ -18,6 +18,6 @@ export default angular.module('todoList', [
   angularMeteor
 ])
   .component('todosList', {
-    templateUrl: 'import/components/todosList/todosList.html',
+    templateUrl: 'imports/components/todosList/todosList.html',
     controller: TodosListCtrl
   });
