@@ -16,6 +16,17 @@ class TodosListCtrl {
   }
 }
 
+addTask(newTask) {
+  // Insert a task into the collection
+  Tasks.insert({
+    text: newTask,
+    createAt: new Date
+  });
+
+  // Clear form
+  this.newTask = '';
+}
+
 export default angular.module('todoList', [
   angularMeteor
 ])
