@@ -62,7 +62,7 @@ class TodosListCtrl {
   }
 
   setPrivate(task) {
-    Meteor.call('tasks.setPrivate', 'task._id', !task.private);
+    Meteor.call('tasks.setPrivate', task._id, !task.private);
   }
 }
 
