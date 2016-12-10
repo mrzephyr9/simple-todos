@@ -47,5 +47,10 @@ describe('todosList', function() {
         Meteor.call.restore();
       });
     });
+
+    it('should call tasks.insert method', function() {
+      sinon.assert.calledOnce(Meteor.call);
+      sinon.assert.calledWith(Meteor.call, 'tasks.insert', newTask);
+    });
   });
 })
